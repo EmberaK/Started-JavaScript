@@ -1,5 +1,5 @@
-const string1 = prompt("Введіть перший рядок:");
-const string2 = prompt("Введіть другий рядок:");
-const string3 = prompt("Введіть третій рядок:");
+const string1 = prompt("Enter the first string:");
+const string2 = prompt("Enter the second string:");
+const string3 = prompt("Enter the third string:");
 
-console.log(`Рядки у довільному порядку: ${string1}, ${string2}, ${string3}.`);
+console.log(`Strings in random order: ${string1}, ${string2}, ${string3}.`);

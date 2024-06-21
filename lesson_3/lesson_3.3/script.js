@@ -1,1 +1,1 @@
-console.log(prompt("Введіть п'ятизначне число:").split('').join(' '));
+console.log(prompt("Enter a five-digit number:").split('').join(' '));

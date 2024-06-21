@@ -1,6 +1,3 @@
-
-console.log(typeof "Hello, world!");
-
 //number
 console.log(typeof 30);
 console.log(typeof 90);
