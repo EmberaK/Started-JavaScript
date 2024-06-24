@@ -26,3 +26,23 @@ do {
     break;
 } while (false);
 
+
+// for ... of
+
+const numbers = [];
+for (let ia = 20; ia <= 30; ia += 0.5) {
+  numbers.push(ia);
+}
+for (let number of numbers) {
+  console.log(number);
+}
+
+// for ... in
+
+const numbers2 = [];
+for (let ib = 20; ib <= 30; ib += 0.5) {
+  numbers.push(ib);
+}
+for (let index in numbers2) {
+  console.log(numbers2[index]);
+}
