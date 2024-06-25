@@ -1,15 +1,15 @@
 // for
 
 for (iFor = 20; iFor <= 30; iFor += 0.5) {
-    console.log(iFor);
+  console.log(iFor);
 }
 
 // while
 
 let iWhile = 20;
 while (iWhile <= 30) {
-    console.log(iWhile)
-    iWhile += 0.5;
+  console.log(iWhile)
+  iWhile += 0.5;
 }
 
 
@@ -17,13 +17,13 @@ while (iWhile <= 30) {
 
 let iWhileDo = 20;
 do {
-    let iWhileDoInner = iWhileDo;
-    while (iWhileDoInner <= 30) {
-        console.log(iWhileDoInner)
-        iWhileDoInner += 0.5;
-    
-    }
-    break;
+  let iWhileDoInner = iWhileDo;
+  while (iWhileDoInner <= 30) {
+    console.log(iWhileDoInner)
+    iWhileDoInner += 0.5;
+
+  }
+  break;
 } while (false);
 
 

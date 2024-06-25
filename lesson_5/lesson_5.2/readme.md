@@ -1,0 +1,1 @@
+One dollar costs 26 hryvnias. Display data with the calculation of the cost for 10, 20, 30... 100 dollars.
