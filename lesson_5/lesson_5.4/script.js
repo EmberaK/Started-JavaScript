@@ -1,24 +1,19 @@
-let N = prompt("Please, write a integer and positive number");
+let N;
+do{
+    N = prompt("please write");
+}while(isNaN(N) || N <= 0);
 
-if (isNaN(N) || N <= 0) {
-    N = prompt("Please, write a integer and positive number");
+N = Number(N)
+function isPrime(N){
+    for(let i = 2; i <= Math.sqrt(N); i++){
+        if(N % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+if (isPrime(N)) {
+    console.log("This number is prime");
 } else {
-    N = Number(N);
-    function isPrime(num) {
-        if (num <= 1) {
-            return false; // 0 and 1 are not prime numbers
-        }
-        for (let i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i === 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    if (isPrime(N)) {
-        console.log("This number is prime");
-    } else {
-        console.log("This number is not prime");
-    }
+    console.log("This number is not prime");
 }
