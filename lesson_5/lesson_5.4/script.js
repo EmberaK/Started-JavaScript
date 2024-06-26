@@ -1,7 +1,7 @@
 let N = prompt("Please, write a integer and positive number");
 
 if (isNaN(N) || N <= 0) {
-    console.log("Please, write a integer and positive number");
+    N = prompt("Please, write a integer and positive number");
 } else {
     N = Number(N);
     function isPrime(num) {
