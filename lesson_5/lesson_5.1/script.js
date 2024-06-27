@@ -15,34 +15,8 @@ while (iWhile <= 30) {
 
 // do and while
 
-let iWhileDo = 20;
+let start = 20;
 do {
-  let iWhileDoInner = iWhileDo;
-  while (iWhileDoInner <= 30) {
-    console.log(iWhileDoInner)
-    iWhileDoInner += 0.5;
-
-  }
-  break;
-} while (false);
-
-
-// for ... of
-
-const numbers = [];
-for (let ia = 20; ia <= 30; ia += 0.5) {
-  numbers.push(ia);
-}
-for (let number of numbers) {
-  console.log(number);
-}
-
-// for ... in
-
-const numbers2 = [];
-for (let ib = 20; ib <= 30; ib += 0.5) {
-  numbers.push(ib);
-}
-for (let index in numbers2) {
-  console.log(numbers2[index]);
-}
+  start += 0.5;
+  console.log(start)
+} while (start < 30) 

@@ -1,12 +1,12 @@
-let N;
+let integerNumber;
 do{
-    N = prompt("please write");
-}while(isNaN(N) || N <= 0);
+    integerNumber = prompt("Please enter an integer number");
+}while(isNaN(integerNumber) || integerNumber <= 0);
 
-N = Number(N)
-function isPrime(N){
-    for(let i = 2; i <= Math.sqrt(N); i++){
-        if(N % i === 0){
+N = Number(integerNumber)
+function isPrime(integerNumber){
+    for(let i = 2; i <= Math.sqrt(integerNumber); i++){
+        if(integerNumber % i === 0){
             return false;
         }
     }
