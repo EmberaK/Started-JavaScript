@@ -13,20 +13,4 @@ function removeElement() {
 }
 
 // Викликаємо функцію для тестування
-removeElement();
-
-
-// function removeElement() {
-//     // Запрос ввода массива и преобразование его в массив чисел
-//     let array = prompt('Введите массив чисел через запятую', '1,3,4,6,2,5,7').split(',').map(Number);
-//     // Запрос ввода числа для удаления
-//     let itemToRemove = Number(prompt('Введите число для удаления', 4));
-    
-//     // Фильтрация массива для удаления указанного элемента
-//     let resultArray = array.filter(item => item !== itemToRemove);
-    
-//     alert(`Результат: ${resultArray}`);
-//     }
-    
-//     removeElement();
-    
+removeElement();    
