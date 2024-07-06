@@ -1,14 +1,18 @@
-function createSum () {
-    let currentSum = 0;
+
+// Функция createSum создает и возвращает функцию, которая управляет текущей суммой
+function createSum() {
+    let currentSum = 0; // Инициализация текущей суммы нулем
+    // Возвращаемая функция, которая принимает число и добавляет его к текущей сумме
     return function (num) {
-        currentSum += num;
-        return currentSum;
+        currentSum += num; // Добавляем переданное число к текущей сумме
+        return currentSum; // Возвращаем новое значение текущей суммы
     };
 }
 
+// Создаем экземпляр функции управления суммой
 const sum = createSum();
 
-console.log(sum(4)); // 4
-console.log(sum(6)); // 10
-console.log(sum(10)); // 20
-console.log(sum(7)); // 27
+console.log(sum(4)); // 4 - Первый вызов функции с аргументом 4, выводит 4
+console.log(sum(6)); // 10 - Второй вызов с аргументом 6, выводит 10 (4 + 6)
+console.log(sum(10)); // 20 - Третий вызов с аргументом 10, выводит 20 (10 + 10)
+console.log(sum(7)); // 27 - Четвертый вызов с аргументом 7, выводит 27 (20 + 7)
