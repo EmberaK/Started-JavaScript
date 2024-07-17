@@ -1,0 +1,19 @@
+Task on ukr: 
+Дізнатись суму всіх зарплат користувачів:
+
+let company = {
+    sales: [
+        { name: "John", salary: 1000 },
+        { name: "Alice", salary: 600 },
+    ],
+    development: {
+        web: [
+            { name: "Petter", salary: 2000 },
+            { name: "Alex", salary: 1000 },
+        ],
+        internals: [{ name: "Jack", salary: 1200 }],
+    },
+};
+
+Об'єкт може містити невідому кількість департаментів та співробітників
+
