@@ -26,17 +26,20 @@ let contactBook = {
             phone: 391,
             email:'sofia@example.com'
         },
-    ],
+    ], 
+    // поиск контактов
     findContact: function(name){
         return this.people.find(person => person.name === name);
     },
+    // добавление новых контактов
     addContact: function(name, phone, email){
         this.people.push({name, phone, email});
     },
 }
-
+// виклик писка контактов
 let findContact = contactBook.findContact('Anna');
 console.log(findContact);
 
+// виклик добавление нового контакта 
 contactBook.addContact('Alex', 129, 'alex@example.com');
 console.log(contactBook.people);
