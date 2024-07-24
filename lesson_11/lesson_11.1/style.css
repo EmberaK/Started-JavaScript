@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+table {
+    width: 100%;
+    /* красивые линии для таблицы */
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
