@@ -10,6 +10,5 @@ const randomImage = images[randomImageIndex];
 // написать src="images/${randomImage}"
 const imagePath = `images/${randomImage}`;
 
-
 document.body.innerHTML = `<img src="${imagePath}" alt="Random Image">`;
 
