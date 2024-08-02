@@ -1,15 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const todoList = document.getElementById('todoList');
-    const newTaskInput = document.getElementById('newTask');
-    const addItemButton = document.getElementById('addItemButton');
+    const todoList = document.querySelector('#todoList');
+    const newTaskInput = document.querySelector('#newTask');
+    const addItemButton = document.querySelector('#addItemButton');
+
+    // Создаем элемент style и добавляем его в head
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .deleteBtn{
+            margin-left: 10px;
+        };`
+    document.head.appendChild(style);
 
     // Добавляем обработчик события клика для кнопки добавления
     addItemButton.addEventListener('click', function () {
-        if (newTaskInput.value === '' || newTaskInput.value === ' ') {
+        if (newTaskInput.value.trim() === '') {
             alert('Please, enter sentence');
         } else {
             const newItem = document.createElement('li'); // Создаем новый элемент списка
-            let saveNewTaskInput = newTaskInput.value + ' '; // Получаем значение из input
+            let saveNewTaskInput = newTaskInput.value; // Получаем значение из input
 
             newItem.textContent = saveNewTaskInput; // Устанавливаем текст элемента списка
 
