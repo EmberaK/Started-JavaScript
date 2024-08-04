@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.block--for--item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.span--for--item{
+    color: red;
+}
+.answer{
+    text-decoration: none;
+}
