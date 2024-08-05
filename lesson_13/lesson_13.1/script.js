@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     message.addEventListener("input", () => {
         if (message.value.trim().length < 5) {
-            messageForMessage.textContent = "Введіть неменьше 5 символів в текстове поле.";
+            messageForMessage.textContent = "Введіть не меньше 5 символів в текстове поле.";
         } else {
             messageForMessage.textContent = "";
         }
@@ -50,10 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     email.addEventListener('input', () => {
         if (!email.value.includes("@")) {
             messageForEmail.textContent = "Email повинен містити '@'.";
-            messageForEmail.style.color = "red";
         } else if (!email.value.includes(".")) {
             messageForEmail.textContent = "Email повинен містити '.'.";
-            messageForEmail.style.color = "red";
         } else {
             messageForEmail.textContent = "";
         };
@@ -69,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Email:", email.value);
 
         // 2 variant
-        console.log(`Пользователь ввел: 
+        console.log(`Пользователь ввів: 
             Name: ${name.value},
             Message: ${message.value},
             Phone Number: ${phoneNumber.value},
