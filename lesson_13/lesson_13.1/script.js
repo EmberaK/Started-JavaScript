@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!phoneNumber.value.startsWith("+380")) {
             messageForNumber.textContent = "Допишіть до початка '+380' ";
         } else if (phoneNumber.value.length !== 13) {
-            messageForNumber.textContent = "Номер повинен мати 13 символів, провірьте кількість символів.";
+            messageForNumber.textContent = "Номер повинен мати 13 символів, перевірьте кількість символів.";
         } else {
             messageForNumber.textContent = "";
         }
