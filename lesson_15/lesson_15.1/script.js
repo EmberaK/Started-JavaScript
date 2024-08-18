@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     pushValueInput.addEventListener("click", () => {
         if (getValueInput.value.trim() === "") {
-            alert("Please, enter sentence in input");
+            alert("Введіть, буль ласка, текст в input");
         } else {
             const createItemInList = document.createElement("li");
             createItemInList.classList.add("todo-item");
