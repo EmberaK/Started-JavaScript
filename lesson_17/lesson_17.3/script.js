@@ -1,18 +1,28 @@
 class BankAccount {
-
+    #balance;
     constructor(initialBalance = 0) {
-        this.balance = initialBalance;
+        this.#balance = initialBalance;
     }
 
     getBalance(){
-        return this.balance;
+        return this.#balance;
     }
 
     deposit(cash){
-        this.balance += cash;
+        if(cash>0){
+            this.#balance += cash;
+        } else{
+            alert('Your waller said: "Can you give me some money? :)"')
+        }
     }
     withdraw(cash){
-        this.balance -= cash;
+        if((cash > 0 && this.#balance >= cash)){
+            this.#balance -= cash;
+        } else if(cash < 0){
+            alert('Your waller said: "You didn`t take the money".')
+        } else{
+            alert('Your waller said: "You don`t have enough money to withdraw the desired amount.".')
+        }
     }
 }
 
