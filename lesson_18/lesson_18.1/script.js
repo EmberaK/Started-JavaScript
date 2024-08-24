@@ -1,28 +1,22 @@
-// Устанавливаем начальное время таймера (например, 1 минута 25 секунд)
-let totalTimeInSeconds = 85; // 1 минута 25 секунд
+let userTime;
+do{
+    userTime = Number(prompt('Enter seconds, please', '85'));
+} while(isNaN(userTime));
 
-// Функция для форматирования времени в формате 01:25
-function formatTime(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+function transformationInMinutesAndSeconds(seconds){
+    const minutesInTimer = Math.floor(seconds / 60);
+    const secondsInTimer = seconds % 60; 
+    return `${minutesInTimer > 10? '':'0'}${minutesInTimer} : ${secondsInTimer > 10? '':'0'}${secondsInTimer}`;
 }
 
-// Функция для обновления таймера на странице
-function updateTimer() {
-    const timerElement = document.getElementById('timer');
-    timerElement.textContent = formatTime(totalTimeInSeconds);
-
-    // Если время вышло, останавливаем таймер
-    if (totalTimeInSeconds === 0) {
-        clearInterval(timerInterval);
-    } else {
-        totalTimeInSeconds--;
+function updateTimer(){
+    const htmlTimer = document.querySelector('#timer');
+    htmlTimer.textContent = transformationInMinutesAndSeconds(userTime);
+    if(userTime <= 0){
+        clearInterval(myTimeout);
+    } else{
+        userTime--;
     }
 }
-
-// Запускаем таймер с интервалом 1 секунда
-const timerInterval = setInterval(updateTimer, 1000);
-
-// Обновляем таймер сразу при загрузке страницы
-updateTimer();
+let myTimeout = setInterval(updateTimer, 1000);
+updateTimer;
