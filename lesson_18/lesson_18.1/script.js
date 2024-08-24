@@ -6,7 +6,7 @@ do{
 function transformationInMinutesAndSeconds(seconds){
     const minutesInTimer = Math.floor(seconds / 60);
     const secondsInTimer = seconds % 60; 
-    return `${minutesInTimer > 10? '':'0'}${minutesInTimer} : ${secondsInTimer > 10? '':'0'}${secondsInTimer}`;
+    return `${minutesInTimer >= 10? '':'0'}${minutesInTimer}:${secondsInTimer >= 10? '':'0'}${secondsInTimer}`;
 }
 
 function updateTimer(){
@@ -14,6 +14,7 @@ function updateTimer(){
     htmlTimer.textContent = transformationInMinutesAndSeconds(userTime);
     if(userTime <= 0){
         clearInterval(myTimeout);
+        alert('Completed timer')
     } else{
         userTime--;
     }
