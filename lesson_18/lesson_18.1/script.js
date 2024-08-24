@@ -4,9 +4,11 @@ do{
 } while(isNaN(userTime));
 
 function transformationInMinutesAndSeconds(seconds){
-    const minutesInTimer = Math.floor(seconds / 60);
     const secondsInTimer = seconds % 60; 
-    return `${minutesInTimer >= 10? '':'0'}${minutesInTimer}:${secondsInTimer >= 10? '':'0'}${secondsInTimer}`;
+    const totalMinutes = Math.floor(seconds / 60);
+    const hoursInTimer = Math.floor(totalMinutes / 60);
+    const minutesInTimer = totalMinutes % 60;
+    return `${hoursInTimer >= 10? '':'0'}${hoursInTimer}:${minutesInTimer >= 10? '':'0'}${minutesInTimer}:${secondsInTimer >= 10? '':'0'}${secondsInTimer}`;
 }
 
 function updateTimer(){
@@ -14,7 +16,8 @@ function updateTimer(){
     htmlTimer.textContent = transformationInMinutesAndSeconds(userTime);
     if(userTime <= 0){
         clearInterval(myTimeout);
-        alert('Completed timer')
+        const headingTimer = document.querySelector('#heading');
+        headingTimer.textContent = 'Done';
     } else{
         userTime--;
     }
