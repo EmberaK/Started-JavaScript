@@ -5,9 +5,11 @@ do{
 
 function transformationInMinutesAndSeconds(seconds){
     const secondsInTimer = seconds % 60; 
+
     const totalMinutes = Math.floor(seconds / 60);
     const hoursInTimer = Math.floor(totalMinutes / 60);
     const minutesInTimer = totalMinutes % 60;
+    
     return `${hoursInTimer >= 10? '':'0'}${hoursInTimer}:${minutesInTimer >= 10? '':'0'}${minutesInTimer}:${secondsInTimer >= 10? '':'0'}${secondsInTimer}`;
 }
 
@@ -17,7 +19,7 @@ function updateTimer(){
     if(userTime <= 0){
         clearInterval(myTimeout);
         const headingTimer = document.querySelector('#heading');
-        headingTimer.textContent = 'Done';
+        headingTimer.textContent = 'Ended';
     } else{
         userTime--;
     }
