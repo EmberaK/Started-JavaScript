@@ -17,10 +17,10 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
         method: 'POST',
 
         // Указываем заголовки для нашего запроса
-    //     headers: {
-    //     // Устанавливаем тип контента в формате JSON
-    //     'Content-Type': 'application/json'
-    // },
+        headers: {
+        // Устанавливаем тип контента в формате JSON
+        'Content-Type': 'application/json'
+    },
 
         // Преобразуем данные в строку JSON и отправляем в теле запроса
         body: JSON.stringify(data)
