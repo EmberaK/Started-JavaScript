@@ -57,7 +57,7 @@ form {
     margin-right: 5px;
 }
 
-#button-city {
+#button-city, #update-data {
     padding: 5px 10px;
     border-radius: 5px;
     background-color: #5c9ded;
@@ -66,6 +66,11 @@ form {
     cursor: pointer;
 }
 
-#button-city:hover {
+#button-city:hover, #update-data:hover {
     background-color: #4a89cc;
+}
+#update-data{
+    text-transform: uppercase;
+    width: 100%;
+    margin: 10px 0;
 }

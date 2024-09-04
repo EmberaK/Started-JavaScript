@@ -51,7 +51,7 @@ const updateWeatherData = (data) => {
     document.getElementById('humidity').textContent = `Humidity: ${data.main.humidity}%`;
     document.getElementById('pressure').textContent = `Pressure: ${data.main.pressure} hPa`;
     document.getElementById('wind').textContent = `Wind: ${data.wind.speed} km/h SSE`;
-    document.getElementById('real-temp').textContent = `${Math.floor(data.main.temp - 273.15)}°C`;
+    document.getElementById('real-temp').textContent = `Temp: ${Math.floor(data.main.temp - 273.15)}°C`;
     document.getElementById('likes-temp').textContent = `Feels like: ${Math.floor(data.main.feels_like - 273.15)}°C`;
     
     const mainWeatherData = data.weather[0].main;
@@ -76,3 +76,7 @@ async function getAPIDatas() {
 }
 
 getAPIDatas();
+
+document.getElementById('update-data').addEventListener('click', function(){
+    getAPIDatas();
+})
