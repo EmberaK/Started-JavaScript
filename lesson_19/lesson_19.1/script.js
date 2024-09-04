@@ -58,7 +58,7 @@ const updateWeatherData = (data) => {
     document.getElementById('main-weather').textContent = mainWeatherData;
     
     // Обновление картинки на основе типа погоды
-    const weatherIcon = weatherIcons[mainWeatherData] || 'https://example.com/default.png';
+    const weatherIcon = weatherIcons[mainWeatherData] || 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdzen.ru%2Fa%2FXz5FZY7lch3bkJQv&psig=AOvVaw0zi6Ya69jjural4XkSuQfT&ust=1725553515482000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjf7JDaqYgDFQAAAAAdAAAAABAJ';
     document.getElementById('weather-icon').src = weatherIcon;
 };
 
