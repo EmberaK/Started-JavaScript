@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather Widget</title>
     <style>
         #weather {
@@ -20,9 +21,23 @@
 </head>
 <body>
 
-    <div id="wether">
+    <div id="weather">
+        <h2 id="your-city"></h2>
         <h3 id="data"></h3>
         <h2 id="time"></h2>
+        <p id="humidity"></p>
+        <p id="pressure"></p>
+        <p id="wind"></p>
+        <p id="real-temp"></p>
+        <p id="likes-temp"></p>
+        <p id="main-weather"></p>
+        <img src="#" alt="weather-icon" id="weather-icon">
+        <form action="#" method="get">
+            <label>
+                <input id="input-city" type="text" placeholder="Please, write your city">
+            </label>
+            <button id="button-city" type="submit">Send city</button>
+        </form>
     </div>
     
     
