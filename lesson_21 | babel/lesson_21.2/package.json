@@ -2,18 +2,15 @@
   "name": "lesson_21.2",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "Babel": "^0.0.1"
-  },
   "devDependencies": {
     "@babel/cli": "^7.25.6",
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4"
+    "@babel/core": "^7.25.2"
   }
 }

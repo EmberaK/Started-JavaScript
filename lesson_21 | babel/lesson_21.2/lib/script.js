@@ -1,5 +1,3 @@
-"use strict";
-
 var map = L.map('map').setView([50.4501, 30.5234], 13); // Coordinates of Kyiv
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
