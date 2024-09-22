@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"mBAEAA,QAAQC,IAAI,OACZD,QAAQC,IAAI,OACZD,QAAQC,IAAI,OACZD,QAAQC,IAAI,M","sources":["webpack://webpack/./src/js/main.js"],"sourcesContent":["import '../sсss/main.scss';\n\nconsole.log('Hi!');\nconsole.log('Hi2');\nconsole.log('Hi3');\nconsole.log('Hi4');\n"],"names":["console","log"],"sourceRoot":""}

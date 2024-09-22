@@ -20,4 +20,5 @@ We learned:
 - lesson_20: Libraries and npm;
 - lesson_21: EcmaScript and Babel;
 - lesson_22: Code Optimization and Modern Tools:
-    - gulp
+    - gulp,
+    - webpack

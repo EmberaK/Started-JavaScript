@@ -21,4 +21,8 @@
     - mode: 'development' - для разработки, с включёнными Source Maps и быстрыми сборками,
     - mode: 'production' - для финальной сборки, с минификацией и оптимизацией кода
 6. Cтоит в webpack.config.js после 5-й строки дописать(что из свойств devtool подходит для вас, но для меня это):
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
+7. Скачиваем loaders:
+    1. https://webpack.js.org/loaders/babel-loader ,
+    2. https://webpack.js.org/loaders/html-loader ,
+    3. https://webpack.js.org/loaders/sass-loader/
