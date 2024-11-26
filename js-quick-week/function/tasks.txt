@@ -1,0 +1,2 @@
+task1: https://javascript.info/task/rewrite-function-question-or;
+task2: https://javascript.info/task/pow;

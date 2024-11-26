@@ -1,0 +1,1 @@
+task1: https://javascript.info/task/rewrite-arrow;
