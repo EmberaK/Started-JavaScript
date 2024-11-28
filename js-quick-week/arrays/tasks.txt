@@ -1,0 +1,2 @@
+task1: https://javascript.info/task/create-array;
+task2: https://javascript.info/task/array-input-sum;
