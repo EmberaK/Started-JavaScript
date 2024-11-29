@@ -7,4 +7,5 @@ do {
         arr.push(userInput)
     };
 } while (userInput !== null && userInput !== 'word')
+arr = arr.map(el=> el.toLocaleUpperCase())
 console.log(arr);
