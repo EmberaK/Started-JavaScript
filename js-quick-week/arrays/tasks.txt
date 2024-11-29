@@ -1,2 +1,11 @@
 task1: https://javascript.info/task/create-array;
 task2: https://javascript.info/task/array-input-sum;
+task3: https://uk.javascript.info/task/filter-range;
+task4: https://uk.javascript.info/task/filter-range-in-place;
+task5: https://uk.javascript.info/task/sort-back;
+task6: https://uk.javascript.info/task/copy-sort-array;
+task7: https://uk.javascript.info/task/array-get-names;
+task8: https://uk.javascript.info/task/sort-objects;
+task9: https://uk.javascript.info/task/average-age;
+task10: https://uk.javascript.info/task/array-unique;
+task11: https://uk.javascript.info/task/reduce-object;
