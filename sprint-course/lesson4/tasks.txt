@@ -1,0 +1,22 @@
+#LESOON 4.1#
+
+## Task: Round a Decimal Number
+
+1. Create a variable `number` that contains the decimal number `7.6`.
+
+2. Use the `Math.round()` method to round the number to the nearest integer.
+
+3. Output the result to the console.
+
+💡 **Important**: Use the `Math.round()` method for rounding the number and assign the rounded result to the variable `roundedNumber`.
+
+#LESOON 4.2#
+
+## Task: Count the Number of Characters in a String
+
+1. Create a variable `text` that contains the string `"Hello, world!"`.
+
+2. Calculate the number of characters in this string (including spaces) and output the result to the console.
+
+💡 **Important**: Use the variable `characterCount` to store the result and the `length` method to count the number of characters.
+
