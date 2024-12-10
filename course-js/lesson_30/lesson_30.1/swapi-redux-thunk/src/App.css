@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
